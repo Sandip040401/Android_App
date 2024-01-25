@@ -28,7 +28,7 @@
     <Button
         android:id="@+id/button3"
         android:layout_width="wrap_content"
-        android:layout_height="44dp"
+        android:layout_height="48dp"
         android:backgroundTint="@color/my_custom_color"
         android:text="Login"
         android:textSize="12sp"
@@ -42,7 +42,7 @@
     <Button
         android:id="@+id/button4"
         android:layout_width="wrap_content"
-        android:layout_height="44dp"
+        android:layout_height="48dp"
         android:layout_marginStart="10dp"
         android:backgroundTint="@color/my_custom_color"
         android:text="SignUp"
@@ -58,7 +58,7 @@
         android:id="@+id/cardView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:cardBackgroundColor="@color/my_custom_color"
+        app:cardBackgroundColor="@color/orange_color"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"

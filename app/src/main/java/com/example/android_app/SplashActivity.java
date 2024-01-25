@@ -2,7 +2,7 @@ package com.example.android_app;
 
 import android.content.Intent;
 import android.os.Bundle;
-
+import android.os.Handler;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class SplashActivity extends AppCompatActivity {
@@ -12,9 +12,14 @@ public class SplashActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
-        // Start your main activity
-        Intent mainIntent = new Intent(SplashActivity.this, MainActivity.class);
-        startActivity(mainIntent);
-        finish();
+        // Start MainActivity after a delay
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                Intent intent = new Intent(SplashActivity.this, MainActivity.class);
+                startActivity(intent);
+                finish(); // Optional, depending on your requirements
+            }
+        }, 2000); // Adjust the delay as needed
     }
 }
